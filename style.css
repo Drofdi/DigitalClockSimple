@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Poiret+One&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    background: conic-gradient(from 90deg at 50% 125%, #1f005c, #003298, #005ac6, #007fdc, #00a2d3, #00c4ae, #00e474, #00ff00, #1f005c, #003298, #005ac6, #007fdc, #00a2d3, #00c4ae, #00e474, #00ff00);
+}
+
+.container {
+    width: 90%;
+    font-family: 'Poiret One', cursive;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.digitalClock {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+    width: fit-content;
+    border-radius: 20px;
+    background-color: rgba(0, 0, 0, 0.082);
+}
+
+.digitalClock h1{
+    margin: 0 10px;
+    color: white;
+    font-size: 8rem;
+    font-weight: bold;
+}
+
+.hours{
+    width: 14rem;
+    text-align: center;
+}
+
+.minutes{
+    width: 14rem;
+    text-align: center;
+}
+
+.seconds{
+    width: 14rem;
+    text-align: center;
+}
+
+@media(max-width:1250px){
+    .digitalClock h1{
+        font-size: 5.5rem;
+        margin: 0;
+    }
+}
+
+@media(max-width:1024px){
+    .digitalClock h1{
+        font-size: 5.5rem;
+        margin: 0;
+    }
+
+    .hours{
+        width: 10rem;
+        text-align: center;
+    }
+    
+    .minutes{
+        width: 10rem;
+        text-align: center;
+    }
+    
+    .seconds{
+        width: 10rem;
+        text-align: center;
+    }
+}
+
+@media(max-width:768px){
+    .bar1 {
+        display: none;
+    }
+
+    .digitalClock{
+        display: block;
+        text-align: center;
+    }
+
+    .digitalClock h1{
+        font-size: 5.5rem;
+    }
+}
+
+@media(max-width:480px){
+    .digitalClock h1{
+        font-size: 5rem;
+    }
+}
